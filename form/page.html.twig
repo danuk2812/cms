@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="../../../../../css/editPage.css">
+</head>
+<div class="pageView">
+    <div class="container">
+        <div class="page">
+            <div class="table">
+                <form action="/admin/page/save" method="post" enctype="multipart/form-data">
+                    <div class="row inputs">
+                        <input type="hidden" name="id" class="id" value="{{ page.id }}">
+                        <input type="text" name="title" placeholder="title" class="title" value="{{ page.title}}">
+                        <input type="text" name="content" placeholder="content" class="content" value="{{ page.content }}">
+                        <input type="radio" name="status" value="1">
+                        <label for="status">Admin</label>
+
+                        <input type="radio" name="status" value="0">
+                        <label for="status">User</label>
+                    </div>
+                    <div class="row">
+                        <button class="submit" type="submit">Save!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

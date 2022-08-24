@@ -1,0 +1,14 @@
+<div class="category_twig">
+    <h3>Categories: </h3>
+        {% for category in categories %}
+            <div>
+            Id: {{ category.id }}
+            Name:{{ category.name }}
+
+                <a href="/admin/category/edit/id/{{ category.id }}">Edit</a>
+                <a href="/admin/category/delete/id/{{ category.id }}">Delete</a>
+            <br>
+
+            </div>
+        {% endfor %}
+</div>

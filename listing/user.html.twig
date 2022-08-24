@@ -1,0 +1,16 @@
+<div class="dashboard">
+<h3>Users: </h3>
+{% for user in users %}
+    <div>
+        <div>
+            Password: {{ user.password}}
+        </div>
+        <div>
+            Login:{{ user.login }}
+        </div>
+        <div>
+            Approved: {{ user.is_approved }}
+        </div>
+    </div>
+{% endfor %}
+</div>

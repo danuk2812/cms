@@ -1,0 +1,24 @@
+<div class="dashboard">
+    <h3>Posts: </h3>
+    {% for post in posts %}
+        <div>
+            <div>
+                Id: {{ post.entity_id }}
+            </div>
+            <div>
+                Title:{{ post.title }}
+            </div>
+            <div>
+                Description: {{ post.description }}
+            </div>
+            <div>
+                Category: <a href="?category={{ post.entity_id }}">{{ post.category }}</a>
+            </div>
+            <div>
+                <img src="data:image/png;base64, {{ post.picture }}"/>
+            </div>
+            <a href="/admin/post/edit/id/{{ post.entity_id }}">Edit</a>
+            <a href="/admin/post/delete/id/{{ post.entity_id }}">Delete</a>
+        </div>
+    {% endfor %}
+</div>

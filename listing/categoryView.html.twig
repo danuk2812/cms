@@ -1,0 +1,30 @@
+<div class="categoryView">
+    <div class="container">
+        <div class="category">
+            <div class="table">
+                <div class="row title">
+                    <div class="id">Id</div>
+                    <div class="name">Name</div>
+                    <div class="buttons">Options</div>
+                </div>
+                {% for category in categories %}
+                    <div class="row">
+                        <div class="id">
+                            {{ category.id }}
+                        </div>
+                        <div class="name">
+                            {{ category.name }}
+                        </div>
+                        <div class="buttons">
+                            <a href="/admin/category/edit/id/{{ category.id }}"><i class="icon-pencil"></i></a>
+                            <a href="/admin/category/delete/id/{{ category.id }}"><i class="icon-trash"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="link">
+                <a href="/admin/category/add">Create Category</a>
+            </div>
+        </div>
+    </div>
+</div>

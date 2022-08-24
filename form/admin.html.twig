@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href="../../../../../css/editAdmin.css">
+</head>
+<div class="adminView">
+    <div class="container">
+        <div class="admin">
+            <div class="table">
+                <form action="/admin/admin/save" method="post" enctype="multipart/form-data">
+                    <div class="row inputs">
+                        <div class="msg {{ user.message ?  '' : 'none' }}">{{ user.message }}</div>
+                        <div class="clear">
+                            <a href="/message/new/clear/id/{{ user.id }}" class="{{ user.message ?  '' : 'none' }}"><i class="icon-trash"></i></a>
+                        </div>
+                        <input type="hidden" name="id" class="id" value="{{ user.id }}">
+                        <input type="number" name="password" placeholder="password" class="password"
+                               value="{{ user.password }}">
+                        <input type="text" name="login" placeholder="login" class="login" value="{{ user.login }}">
+                        <input type="radio" name="is_approved" value="1">
+                        <label for="is_approved">True</label>
+
+                        <input type="radio" name="is_approved" value="0">
+                        <label for="is_approved">False</label>
+                    </div>
+                    <div class="row">
+                        <button class="submit" type="submit">Save!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

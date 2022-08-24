@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="../../../../../css/editCategory.css">
+</head>
+<div class="adminView">
+    <div class="container">
+        <div class="admin">
+            <div class="table">
+                <form action="/admin/category/save" method="post">
+                    <input type="hidden" name="id" value="{{ category.id }}">
+                    <input type="text" name="name" placeholder="name" value="{{ category.name }}">
+                    <button type="submit" class="submit">Save!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="dashboard">
+    <h3>Admins: </h3>
+    {% for user in users %}
+        <div>
+            <div>
+                Password: {{ user.password}}
+            </div>
+            <div>
+                Login:{{ user.login }}
+            </div>
+            <div>
+                Approved: {{ user.is_approved }}
+            </div>
+            <div>
+                Id: {{ user.id }}
+            </div>
+            <a href="/admin/admin/edit/id/{{ user.id }}">Edit</a>
+            <a href="/admin/admin/delete/id/{{ user.id }}">Delete</a>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,20 @@
+<div class="dashboard">
+    {% for pages in pages %}
+        <div>
+            <div>
+                Content:{{ pages.content}}
+            </div>
+            <div>
+                Title: {{ page.title }}
+            </div>
+            <div>
+                Status: {{ page.status }}
+            </div>
+            <div>
+                Id: {{ page.id }}
+            </div>
+            <a href="/admin/page/edit/id/{{ page.id }}">Edit</a>
+            <a href="/admin/page/delete/id/{{ page.id }}">Delete</a>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,76 @@
+<head>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../css/dashboard.css"/>
+</head>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <ul class="navbar-ul">
+                <li class="nav-li">
+                    <a class="nav-link" href="/">
+                        <i class="icon-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/dashboard">
+                        <i class="icon-user"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/page">
+                        <i class="icon-doc icons"></i> Pages
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/category">
+                        <i class="icon-notebook"></i> Categories
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/post">
+                        <i class="icon-pencil icons"></i> Posts
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/admin">
+                        <i class="icon-settings"></i> Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-toolbar">
+            {% if loginStatus %}
+            <ul>
+                <li>
+                    <a href="/logout" class="nav-link">
+                        <i class="icon-logout"></i>
+                        LogOut
+                    </a>
+                </li>
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

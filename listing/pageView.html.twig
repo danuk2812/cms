@@ -1,0 +1,38 @@
+<div class="pageView">
+    <div class="container">
+        <div class="page">
+            <div class="table">
+                <div class="row title">
+                    <div class="id">Id</div>
+                    <div class="content">Content</div>
+                    <div class="title">Title</div>
+                    <div class="status">Status</div>
+                    <div class="buttons">Options</div>
+                </div>
+                {% for page in pages %}
+                    <div class="row">
+                        <div class="id">
+                            {{ page.id }}
+                        </div>
+                        <div class="content">
+                            {{ page.content }}
+                        </div>
+                        <div class="title">
+                            {{ page.title }}
+                        </div>
+                        <div class="status">
+                            {{ page.status }}
+                        </div>
+                        <div class="buttons">
+                            <a href="/admin/page/edit/id/{{ page.id }}"><i class="icon-pencil"></i></a>
+                            <a href="/admin/page/delete/id/{{ page.id }}"><i class="icon-trash"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="link">
+                <a href="/admin/page/add">Create Page</a>
+            </div>
+        </div>
+    </div>
+</div>

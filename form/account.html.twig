@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="../../../../../css/createAccount.css" >
+<title>Create an Account</title>
+<div class="container">
+<form action="/admin/create/save" method="POST">
+    <div class="container">
+        <form class="form-signin" action="/admin-login" method="post">
+            <h2 class="form-signin-heading">Create an Account</h2>
+            <input type="hidden" name="id" class="id">
+
+            <label>
+                <input type="text" name="login" class="form-control" placeholder="Username">
+            </label>
+            <label>
+                <input type="text" name="message" class="form-control" placeholder="Message">
+            </label>
+            <label>
+                <input type="password" name="password" class="form-control" placeholder="Password" >
+            </label>
+            <button class="login" type="submit">Create</button>
+        </form>
+    </div>
+</form>
+</div>

@@ -1,0 +1,49 @@
+<div class="postView">
+    <div class="container">
+        <div class="post">
+            <div class="table">
+                <div class="row title">
+                    <div class="title">Title</div>
+                    <div class="description">Description</div>
+                    <div class="category">Category</div>
+                    <div class="img">Image</div>
+                    <div class="options">Options</div>
+                </div>
+                {% for item in postData %}
+                    <div class="row">
+                        <div class="title">
+                            {{ item.title }}
+                        </div>
+                        <div class="description">
+                            {{ item.description }}
+                        </div>
+                        <div class="category">
+                            <a href="?category={{ item.category_id }}" class="category-link">{{ item.category }}</a>
+                        </div>
+                        <div class="img">
+                            <img src="data:image/png;base64, {{ item.picture }}"/>
+                        </div>
+                        <div class="options">
+                            <a href="/admin/post/edit/id/{{ item.entity_id }}"><i class="icon-pencil"></i></a>
+                            <a href="/admin/post/delete/id/{{ item.entity_id }}"><i class="icon-trash"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="categories">
+            <a href="/admin/post/add" class="category-link">Create Post</a>
+            <h3>Categories:</h3>
+            {% for item in category %}
+                <div class="category">
+                    <ul>
+                        <li>
+                            <a href="?category={{ item.id }}" class="category-link">{{ item.name }}</a>
+                        </li>
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+

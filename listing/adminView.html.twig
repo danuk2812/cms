@@ -1,0 +1,35 @@
+<div class="adminView">
+    <div class="container">
+        <div class="admin">
+            <div class="table">
+                <div class="row title">
+                    <div class="password">Password</div>
+                    <div class="login">Login</div>
+                    <div class="is_approved">Approved</div>
+                    <div class="id">Id</div>
+                    <div class="buttons">Options</div>
+                </div>
+                {% for user in users %}
+                    <div class="row {{ user.message ? 'selected' : '' }} ">
+                        <div class="password">
+                            {{ user.password }}
+                        </div>
+                        <div class="login">
+                            {{ user.login }}
+                        </div>
+                        <div class="is_approved">
+                            {{ user.is_approved }}
+                        </div>
+                        <div class="id">
+                            {{ user.id }}
+                        </div>
+                        <div class="buttons">
+                            <a href="/admin/admin/edit/id/{{ user.id }}"><i class="icon-pencil"></i></a>
+                            <a href="/admin/admin/delete/id/{{ user.id }}"><i class="icon-trash"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
