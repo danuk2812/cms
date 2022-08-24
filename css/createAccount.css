@@ -1,0 +1,82 @@
+.container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1140px;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin: 0 0 4px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  width: 330px;
+}
+
+input::-webkit-input-placeholder {
+  font-family: sans-serif;
+}
+
+input::-moz-placeholder {
+  font-family: sans-serif;
+}
+
+input:-ms-input-placeholder {
+  font-family: sans-serif;
+}
+
+input::-ms-input-placeholder {
+  font-family: sans-serif;
+}
+
+input::placeholder {
+  font-family: sans-serif;
+}
+
+form {
+  width: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.2em;
+  width: 100%;
+  background-color: #338AFF;
+  border-radius: 5px;
+  border-color: #338AFF;
+  color: #fafafa;
+}
+
+.form-signin-heading {
+  margin-bottom: 10px;
+}

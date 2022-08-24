@@ -1,0 +1,220 @@
+a {
+  text-decoration: none;
+}
+
+.right-toolbar {
+  width: 220px;
+  display: block;
+  color: #fafafa;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+header .container .navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-link {
+  display: block;
+  color: rgb(220, 220, 220);
+}
+
+.nav-link:hover {
+  color: #787878;
+}
+
+.navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  background-color: #292b2c;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul li {
+  margin-left: 10px;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selected {
+  background-color: red;
+}
+
+.category-link {
+  text-decoration: underline;
+  color: #1A1A1D;
+}
+
+.category-link:hover {
+  color: #787878;
+}
+
+.adminView {
+  padding-top: 50px;
+  background: #E9ECEf;
+  height: 100vh;
+}
+.adminView .container {
+  border-radius: 20px;
+  padding: 10px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.adminView .container .admin {
+  width: 100%;
+}
+.adminView .container .admin .row.title {
+  background: #E9ECEf;
+  color: #1A1A1D;
+  border-radius: 5px;
+}
+.adminView .container .admin .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.adminView .container .admin .row .id {
+  width: 20%;
+}
+.adminView .container .admin .row .login {
+  width: 20%;
+}
+.adminView .container .admin .row .is_approved {
+  width: 20%;
+}
+.adminView .container .admin .row .password {
+  width: 20%;
+}
+.adminView .container .admin .row .buttons {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.adminView .container .admin .row .buttons .icon-pencil {
+  border: 3px solid lightgray;
+  padding: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: #fafafa;
+}
+.adminView .container .admin .row .buttons .icon-trash {
+  border: 3px solid lightgray;
+  padding: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: #fafafa;
+}
+.adminView .container .admin .row .buttons .icon-pencil:hover {
+  color: darkgrey;
+}
+.adminView .container .admin .row .buttons .icon-trash:hover {
+  color: darkgrey;
+}
+.adminView .container .admin .row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

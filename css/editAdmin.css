@@ -1,0 +1,201 @@
+a {
+  text-decoration: none;
+}
+
+.right-toolbar {
+  width: 220px;
+  display: block;
+  color: #fafafa;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+header .container .navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-link {
+  display: block;
+  color: rgb(220, 220, 220);
+}
+
+.nav-link:hover {
+  color: #787878;
+}
+
+.navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  background-color: #292b2c;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul li {
+  margin-left: 10px;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.submit:hover {
+  background-color: honeydew;
+}
+
+.table .row.selector {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.msg {
+  border: 2px solid #E9ECEf;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.table .inputs {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.none {
+  display: none !important;
+}
+
+.category-link {
+  text-decoration: underline;
+  color: #1A1A1D;
+}
+
+.category-link:hover {
+  color: #787878;
+}
+
+.adminView {
+  padding-top: 50px;
+  background: #E9ECEf;
+  height: 100vh;
+}
+.adminView .container {
+  border-radius: 20px;
+  padding: 10px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.adminView .container .admin {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.adminView .container .admin .row .password {
+  width: 45%;
+  padding: 5px;
+  border: 2px solid #E9ECEf;
+  border-radius: 10px;
+}
+.adminView .container .admin .row .submit {
+  width: 20%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-color: #E9ECEf;
+  border-radius: 10px;
+}
+.adminView .container .admin .row .login {
+  width: 45%;
+  padding: 5px;
+  border: 2px solid #E9ECEf;
+  border-radius: 10px;
+}
+.adminView .container .admin div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

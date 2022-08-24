@@ -1,0 +1,186 @@
+
+a {
+  text-decoration: none;
+
+}
+
+.right-toolbar {
+  width: 220px;
+  display: block;
+  color: #fafafa;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+
+}
+
+header .container .navbar-ul {
+  display: flex;
+}
+
+.nav-link {
+  display: block;
+  color: rgb(220, 220, 220)
+}
+
+.nav-link:hover {
+  color:#787878;
+}
+
+.navbar-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #292b2c;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul li {
+  margin-left: 10px;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+main .container {
+  display: flex;
+  justify-content: center;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+}
+
+.table .row {
+  display: flex;
+}
+.table{
+  width: 80%;
+}
+.category-link {
+  text-decoration: underline;
+  color: #1A1A1D;
+}
+
+.category-link:hover {
+  color: #787878;
+}
+.link{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  color: #1A1A1D;
+}
+.categoryView {
+  padding-top: 50px;
+  background: #E9ECEf;
+  height: 100vh;
+
+  .container {
+    border-radius: 20px;
+    padding: 10px;
+    background: #ffff;
+    display: flex;
+    justify-content: space-between;
+
+    .category {
+      width: 100%;
+      display: flex;
+
+      .row.title {
+        background: #E9ECEf;
+        color: #1A1A1D;
+        border-radius: 5px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-evenly;
+        .id {
+          width: 20%;
+
+        }
+
+        .name {
+          width: 20%;
+        }
+
+        .buttons{
+          width: 20%;
+          display: flex;
+          justify-content: space-evenly;
+
+          .icon-pencil {
+            border: 3px solid lightgray;
+            padding: 6px;
+            flex-direction: column;
+            background: lightgray;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #fafafa;
+          }
+
+          .icon-trash {
+            border: 3px solid lightgray;
+            padding: 6px;
+            flex-direction: column;
+            background: lightgray;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #fafafa;
+          }
+          .icon-pencil:hover {
+            color: darkgrey;
+          }
+
+          .icon-trash:hover {
+            color: darkgrey;
+          }
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+  }
+}

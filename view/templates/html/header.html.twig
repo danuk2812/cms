@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" href="../../../../../css/onePostView.css">
+    <title>Home</title>
+</head>
+<div class="row">
+    <header>
+        {{ msg }}
+        <div class="container">
+            <div class="cms-link">
+                <ul>
+                    <li class="nav-li">
+                        <a class="nav-link" href="/admin">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="nav-li">
+                        <a class="nav-link" href="/create/account">
+                            Create an Account
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-ul">
+                    {% for item in pages %}
+                        <li>
+                            <a href="/page/view/id/{{ item.id }}">{{ item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>

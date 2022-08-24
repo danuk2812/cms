@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../../../../../css/settings.css">
+    <title>Admin-Panel</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <ul class="navbar-ul">
+                <li class="nav-li">
+                    <a class="nav-link" href="/">
+                        <i class="icon-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/dashboard">
+                        <i class="icon-user"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/page">
+                        <i class="icon-doc icons"></i> Pages
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/admin/post">
+                        <i class="icon-pencil icons"></i> Posts
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-toolbar">
+            {% if loginStatus %}
+                <ul>
+                    <li>
+                        <a href="/logout" class="nav-link">
+                            <i class="icon-logout"></i>
+                            LogOut
+                        </a>
+                    </li>
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</header>
+</body>

@@ -1,0 +1,157 @@
+
+a {
+  text-decoration: none;
+
+}
+
+.right-toolbar {
+  width: 220px;
+  display: block;
+  color: #fafafa;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+header .container .navbar-ul {
+  display: flex;
+}
+
+.nav-link {
+  display: block;
+  color: rgb(220, 220, 220)
+}
+
+.nav-link:hover {
+  color: #787878;
+}
+
+.navbar-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #292b2c
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul li {
+  margin-left: 10px;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.edit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.submit:hover {
+  background-color: honeydew;
+}
+
+.table .row.selector {
+  justify-content: flex-start;
+}
+
+.table .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.table .inputs {
+  justify-content: space-between;
+}
+
+.category-link {
+  text-decoration: underline;
+  color: #1A1A1D;
+}
+
+.category-link:hover {
+  color: #787878;
+}
+
+.adminView {
+  padding-top: 50px;
+  background: #E9ECEf;
+  height: 100vh;
+
+  .container {
+    border-radius: 20px;
+    padding: 10px;
+    background: #ffff;
+    display: flex;
+    justify-content: space-between;
+
+    .admin {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .row {
+        .password {
+          width: 45%;
+          padding: 5px;
+          border: 2px solid #E9ECEf;
+          border-radius: 10px;
+
+        }
+
+        .submit {
+          width: 20%;
+          padding: 5px;
+          display: flex;
+          justify-content: center;
+          border-color: #E9ECEf;
+          border-radius: 10px;
+        }
+
+        .login {
+          width: 45%;
+          padding: 5px;
+          border: 2px solid #E9ECEf;
+          border-radius: 10px;
+
+        }
+
+      }
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

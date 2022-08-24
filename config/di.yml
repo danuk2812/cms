@@ -1,0 +1,2 @@
+Shop\Api\PostRepositoryInterface:
+  class: Shop\Model\PostRepository

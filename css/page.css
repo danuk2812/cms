@@ -1,0 +1,244 @@
+a {
+  text-decoration: none;
+}
+
+.right-toolbar {
+  width: 220px;
+  display: block;
+  color: #fafafa;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+header .container .navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-link {
+  display: block;
+  color: rgb(220, 220, 220);
+}
+
+.nav-link:hover {
+  color: #787878;
+}
+
+.navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  background-color: #292b2c;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul li {
+  margin-left: 10px;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.category-link {
+  text-decoration: underline;
+  color: #1A1A1D;
+}
+
+.category-link:hover {
+  color: #787878;
+}
+
+.link {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1A1A1D;
+}
+
+body {
+  background: #E9ECEf;
+  height: 100%;
+  clear: both;
+  padding-bottom: 35px;
+  margin: 0;
+}
+
+.pageView {
+  padding-top: 50px;
+  height: 100vh;
+}
+.pageView .content {
+  margin-bottom: 10px;
+}
+.pageView .container {
+  border-radius: 20px;
+  padding: 10px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pageView .container .page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pageView .container .page .table {
+  width: 100%;
+}
+.pageView .container .page .row.title {
+  background: #E9ECEf;
+  color: #1A1A1D;
+  border-radius: 5px;
+}
+.pageView .container .page .row .title {
+  width: 20%;
+}
+.pageView .container .page .row .content {
+  width: 20%;
+}
+.pageView .container .page .row .id {
+  width: 20%;
+}
+.pageView .container .page .row .status {
+  width: 20%;
+}
+.pageView .container .page .row .buttons {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.pageView .container .page .row .buttons .icon-pencil {
+  border: 3px solid lightgray;
+  padding: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: #fafafa;
+}
+.pageView .container .page .row .buttons .icon-trash {
+  border: 3px solid lightgray;
+  padding: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: #fafafa;
+}
+.pageView .container .page .row .buttons .icon-pencil:hover {
+  color: darkgrey;
+}
+.pageView .container .page .row .buttons .icon-trash:hover {
+  color: darkgrey;
+}
+.pageView .container .page .row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
